@@ -1,11 +1,13 @@
-# Sample Snack app
+All code developed on Snack (changes can be seen there) : https://snack.expo.io/@lifealert116/swminiproject
 
-Open the `App.js` file to start writing some code. You can preview the changes directly on your phone or tablet by clicking the **Run** button or use the simulator by clicking **Tap to Play**. When you're done, click **Save** and share the link!
+We use cloud database in Firebase to store user’s login information and  trackers of symptoms. The email address will be added when users sign up with
+authentication. The forms will be consists of Boolean function if users have symptoms and their zip code address. We can make a admin dashboard by have one more
+indicator whether the user is admin. If true, they have access to the see the output of read data in cloud database what percentage of people have symptoms.
+However, when we actually run the code for Auth and cloud database, there is error about package dependency. React Native can not connect the firebase correctly
+even we put a number of firebase keys at the top.
 
-When you're ready to see everything that Expo provides (or if you want to use your own editor) you can **Export** your project and use it with [expo-cli](https://docs.expo.io/versions/latest/introduction/installation.html).
+For the API we decided to use the api given: 'https://api.covid19api.com'. We used the path 'https://api.covid19api.com/summary' in order to get the total global 
+amounts of death.
 
-All projects created in Snack are publicly available, so you can easily share the link to this project via link, or embed it on a web page with the **Embed** button.
+The UI is simplistic and streamlined in order to make it easy to use.
 
-If you're having problems, you can tweet to us [@expo](https://twitter.com/expo) or ask in our [forums](https://forums.expo.io).
-
-Snack is Open Source. You can find the code on the [GitHub repo](https://github.com/expo/snack-web).
